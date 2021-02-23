@@ -1,0 +1,423 @@
+/* colors
+primary:#000248;
+secondary:#702fff;
+*/
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: -9999;
+    background-color: rgb(145 146 151);
+}
+
+.logo {
+    width: 70%;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.menu {
+    width: 60%;
+    float: right;
+    margin-top: 20px;
+}
+
+.menu nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.menu nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding:20px;
+}
+
+
+/* footer {
+    height: 500px;
+    width: 100%;
+    background-color: #ccc;
+} */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.des {
+    width: 50%;
+}
+
+.image {
+    width: 50%;
+}
+
+.image img {
+    height: 90%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    top: -280px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -999;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: skewY(-20deg);
+}
+
+.des h1 {
+    font-size: 72px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+    color: #000248;
+}
+
+.des h4 {
+    font-size: 30px;
+    color: #702fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.des a {
+    margin: 10px;
+    padding: 10px 50px;
+    border: 3px solid #000248;
+    color: #000248;
+    font-family: "Roberto", sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.home-button {
+    margin: 40px auto;
+    display: table;
+}
+
+.facts {
+    background-color: #000248;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.facts-box {
+    margin: 50px 30px;
+}
+
+.facts-box i {
+    font-size: 72px;
+}
+
+.facts-des {
+    float: right;
+    margin-left: 20px;
+}
+
+.facts-des h2 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.facts-des span {
+    font-size: 22px;
+}
+
+.about {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    height: 600px;
+    width: auto;
+    position: relative;
+    top: 100px;
+    left: 250px;
+}
+
+.about-des {
+    width: 50%;
+    padding: 100px;
+}
+
+.about-des ul {
+    list-style-type: none;
+}
+
+.about-des ul li h2 {
+    font-size: 44px;
+    color: #000248;
+    margin: 0;
+}
+
+.about-des ul li h4 {
+    color: #702fff;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.about-des ul li p {
+    margin: 25px 80px 30px 0;
+    text-align: justify;
+}
+
+.about-des ul li a {
+    color: #000248;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.about-des ul li i {
+    padding: 10px;
+}
+
+.about-des ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons i {
+    transition: 300ms;
+}
+
+.social-icons .fa-facebook-f:hover {
+    transform: scale(1.5);
+}
+
+.social-icons .fa-twitter:hover {
+    transform: rotate(360deg) scale(1.5);
+}
+
+.social-icons .fa-youtube:hover {
+    transform: skewX(-15deg) scale(1.5);
+}
+
+.social-icons .fa-linkedin-in:hover {
+    transform: translateX(15px) scale(1.5);
+}
+
+.exp {
+    background: #f5f5f5;
+    padding: 50px 100px;
+    margin-top: 20px;
+}
+
+.contact-head,
+.tes-head,
+.exp-head h4 {
+    text-align: center;
+    font-size: 30px;
+    color: #702fff;
+}
+
+.exp-des {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.exp-box {
+    width: 20%;
+    background: #fff;
+    border-radius: 4px;
+    padding: 35px;
+    margin: 0 15px;
+    box-shadow: 0 2px 6px 0 #dadada;
+}
+
+.exp-box i {
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 50%;
+    /* circle*/
+}
+
+.react i {
+    color: #61dbfb;
+    background: #61dbfb25;
+}
+
+.wordpress i {
+    color: #21759b;
+    background: #21759b25;
+}
+
+.vue i {
+    color: #35495e;
+    background: #35495e25;
+}
+
+.node i {
+    color: #68a063;
+    background: #68a06325;
+}
+
+.exp-box h2 {
+    color: #000248;
+    font-size: 28px;
+}
+
+.progress-exp {
+    height: 4px;
+    width: 90%;
+    background: red;
+}
+
+.progress-projects {
+    height: 4px;
+    width: 80%;
+    background: chartreuse;
+}
+
+.progress-success {
+    height: 4px;
+    width: 90%;
+    background: violet;
+}
+
+.exp-box div {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.tes-des {
+    display: flex;
+    padding: 50px 100px;
+}
+
+.tes-content {
+    margin: 30px;
+    padding: 35px;
+    background: #ccc;
+    border-radius: 7px;
+    background-image: linear-gradient(45deg, #5bcc9f, #49ccff);
+}
+
+.tes-content::after {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Pro";
+    font-size: 40px;
+    font-weight: 900;
+    color: #55CCBD;
+    position: relative;
+    bottom: -53px;
+    left: 45%;
+}
+
+.tes-image {
+    text-align: center;
+}
+
+.tes-image img {
+    height: 64px;
+    width: auto;
+    border-radius: 50%;
+    border: 5px solid #e5e5e5;
+}
+
+.tes-image h3 {
+    margin: 0;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding-top: 50px;
+}
+
+.contact-form form {
+    margin: 0 auto;
+    display: table;
+    width: 40%;
+}
+
+.contact-form textarea,
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e5e5e5;
+}
+
+.contact-form .submit {
+    width: 30%;
+    margin: 0 auto;
+    display: table;
+    background-color: #fff;
+    color: #000248;
+    font-size: 14px;
+    border: 2px solid #000248;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+@keyframes push-on-hover {
+    50% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.push-on-hover:hover,
+.push-on-hover:focus,
+.push-on-hover:active {
+    -webkit-animation-name: push-on-hover;
+    animation-name: push-on-hover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.copyright {
+    background-color: #000248;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.copyright a {
+    color: #ffcd3e;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
